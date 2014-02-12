@@ -1,0 +1,41 @@
+<!--
+ Two player Ping Pong game .
+ Player wins if he reaches a max score.
+ It makes a call to the open weather api every 15 minutes to get the current temperature. According to the temperature set the color of the paddle.
+-->
+
+<html>
+	<head>
+		<title>Pong Game</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		<script src="pong.js"></script>
+	</head>
+	<body>
+		<p id="win">Score Board</p>		
+									
+		<div id="scoreboard">
+			<div id="layer1">
+				<img id="img1" src="wario.png" alt="wario"></img> 
+				<span id="vs">VS</span>
+				<input id="gameState" onclick="stateClicked()" style="height: 20px;" type="button" value="Play" />	
+				<input id="addButton" onclick="addBall()" style="height: 20px;" type="button" value="Add" />					
+				<img id="img2" src="waluigi.png" alt="waluigi"></img> 		
+				<div id="score1" class="scores">0</div>				
+				<div id="score2" class="scores">0</div>			
+			</div>
+			<span id="a1">Player 1</span>
+			<span id="a2">Player 2</span>		
+		</div>
+		<div id="p1">
+		</div>
+		<div id="allBalls">
+			<div id="ball">
+			</div>		
+			<div id="ball2">
+			</div>
+		</div>
+		<div id="p2">
+		</div>
+	</body>
+</html>
