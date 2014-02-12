@@ -1,7 +1,7 @@
 PingPong
 ========
 
-Ping Pong web based game
+Ping Pong web based game (2014)
 
  Two player Ping Pong game .
  Player wins if he reaches a max score.Players can add a new ball in the game by clicking on the 'Add' button.
